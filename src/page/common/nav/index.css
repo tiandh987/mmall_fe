@@ -1,0 +1,38 @@
+.nav{
+	background: #eee;
+	height: 35px;
+	line-height: 35px;
+}
+
+.nav .w{
+    height: 35px;
+}
+
+.nav .container{
+    background: #eee;
+    height: 35px;
+    width: 1080px;
+    /* border: 1px solid red; */
+}
+
+/* 用户部分 */
+.nav .user{
+	float: left;
+}
+.nav .user.login{
+	display: none;
+}
+.nav .user .link{
+	margin-right: 10px;
+}
+
+/* 导航链接部分 */
+.nav .nav-list{
+	float: right;
+    /* width: 270px; */
+    margin-right: -23px;
+}
+.nav .nav-list .nav-item{
+	display: inline-block;
+	margin-right: 10px;
+}

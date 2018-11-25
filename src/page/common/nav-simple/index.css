@@ -1,0 +1,21 @@
+body{
+    background: #fcfcfc;
+}
+.nav-simple{
+	height: 53px;
+	line-height: 53px;
+	/* border-bottom: 1px solid #ddd; */
+	background: #fff;
+}
+
+.nav-simple .w{
+    height: 53px;
+    line-height: 53px;
+}
+
+.nav-simple .logo{
+	font-size: 26px;
+	font-weight: bold;
+	color: #f10215;
+	text-decoration: none;
+}
