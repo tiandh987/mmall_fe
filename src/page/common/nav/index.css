@@ -19,11 +19,17 @@
 .nav .user{
 	float: left;
 }
+
 .nav .user.login{
 	display: none;
 }
-.nav .user .link{
-	margin-right: 10px;
+
+.nav .user.not-login .js-register{
+	margin-left: 10px;
+}
+
+.nav .user.login .js-logout{
+    margin-left: 10px;
 }
 
 /* 导航链接部分 */

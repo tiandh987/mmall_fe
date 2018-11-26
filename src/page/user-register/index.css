@@ -1,0 +1,94 @@
+/* 最外层容器 */
+.page-wrap{
+	background: #e93854;
+	padding: 40px 0;
+}
+/* 表单框 */
+.user-con{
+	position: relative;
+	margin: 0 auto;
+	width: 390px;
+	background: #fff;
+        border-radius: 3px;
+}
+/*标题-用户登录*/
+.user-con .user-title{
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	color: #666;
+}
+/*表单框*/
+.user-con .user-box{
+	padding: 20px;
+}
+/*错误提示框*/
+.user-con .user-box .error-item{
+	position: relative;
+	padding: 4px 0 4px 40px;
+	margin-bottom: 10px;
+	/* border: 1px solid red; */
+	color: red;
+	background: #fde9e9;
+	display: none;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+/*错误图标*/
+.user-con .user-box .error-icon{
+	position: absolute;
+	left: 14px;
+	top: 50%;
+	margin-top: -5px;
+	font-size: 15px;
+}
+.user-con .user-item{
+	position: relative;
+	margin-bottom: 20px;
+}
+.user-con .user-box .error-msg {
+    margin-top: -3px;
+}
+.user-con .user-item .user-lable{
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	bottom: 1px;
+	width: 40px;
+	line-height: 36px;
+	font-size: 18px;
+	color: #d3d3d3;
+	text-align: center;
+	background: #f3f3f3;
+	border-right: 1px solid #bdbdbd;
+}
+.user-con .user-item .user-content{
+	padding: 10px 0 10px 50px;
+	width: 349px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 15px;
+	border: 1px solid #bdbdbd;
+	outline: none;
+    border-radius: 3px;
+}
+/*登录按钮*/
+.user-con .btn-submit{
+	width: 100%;
+	padding: 0;
+	text-align: center;
+	background: #e72955;
+	font-size: 18px;
+	font-weight: normal;
+}
+/*跳转链接*/
+.user-con .link-item{
+	text-align: right;
+	margin-top: 10px;
+}
+.user-con .link-item .link{
+	margin-left: 10px;
+	color: #999;
+}

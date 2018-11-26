@@ -1,7 +1,8 @@
 var Hogan = require('hogan.js');
 
 var conf = {
-	serverHost : 'http://192.168.1.71'
+	// serverHost : 'http://192.168.1.71'
+    serverHost : 'http://192.168.43.71'
 };
 
 // 通用工具类
@@ -10,10 +11,13 @@ var _mm = {
     request : function(params){
         var _this = this;
         $.ajax({
-            type     : params.type     || 'POST',
-            url      : params.url      || '',
-            dataType : params.dataType || 'json',
-            data     : params.data     || '',
+            type      : params.type     || 'POST',
+            url       : params.url      || '',
+            dataType  : params.dataType || 'json',
+            data      : params.data     || '',
+            xhrFields : {
+                withCredentials : true
+            },
             success  : function(res){
                 //请求成功
                 if(0 === res.status){
@@ -28,7 +32,7 @@ var _mm = {
                     typeof params.error === 'function' && params.error(res);
                 }
             },
-            error    : function(err){
+            error     : function(err){
                 typeof params.error === 'function' && params.error(err);
             }
         });
@@ -36,7 +40,7 @@ var _mm = {
     
     //统一登录方法
     doLogin : function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
     
     //跳回主页

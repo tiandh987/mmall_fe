@@ -3,10 +3,11 @@
 	float: left;
 	width: 130px;
 	min-height: 100px;
+    margin-top: 20px;
 }
 .nav-side .nav-item{
 	line-height: 25px;
-	font-size: 13px;
+	font-size: 14px;
 }
 .nav-side .nav-item .link{
 	color: #888;

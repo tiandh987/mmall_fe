@@ -4,8 +4,8 @@ body{
 .nav-simple{
 	height: 53px;
 	line-height: 53px;
-	/* border-bottom: 1px solid #ddd; */
-	background: #fff;
+	border-bottom: 1px solid #ddd;
+	background: #fcfcfc;
 }
 
 .nav-simple .w{
