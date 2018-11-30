@@ -1,4 +1,8 @@
+
 /* 通用头部导航 */
+.header{
+    background: #fff;
+}
 .header .logo{
 	position: absolute;
 	left: 60px;

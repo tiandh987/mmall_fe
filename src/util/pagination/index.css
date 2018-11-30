@@ -1,0 +1,38 @@
+.pg-content{
+    text-align: center;
+    font-size: 17px;
+}
+
+.pg-content .pg-item{
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0px 5px;
+    color: #555;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select : none;
+} 
+
+.pg-content .pg-item.active{
+    cursor: auto;
+    border: 1px solid #f10215;
+}
+
+.pg-content .pg-item.disabled{
+    cursor: auto;
+    background: none;
+    color: #ccc;
+}
+
+.pg-content .pg-total{
+    cursor: auto;
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+    font-size: 17px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select : none;
+}

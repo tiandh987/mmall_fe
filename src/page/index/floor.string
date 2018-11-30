@@ -1,0 +1,9 @@
+{{#floorList}}
+<li class="floor-item">
+	<a href="./list.html?categoryId={{categoryId}}" target="_blank">
+		<img class="img-thumbnail floor-img" src="{{floorImg}}" />
+		<span class="desc-text">{{descText}}</span>
+		<span class="floor-text"><i class="fa fa-jpy" aria-hidden="true"></i>{{price}}</span>
+	</a>
+</li>
+{{/floorList}}

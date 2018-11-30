@@ -1,20 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <%= require('html-loader!./layout/header-common.html') %>
-        <title><%= htmlWebpackPlugin.options.title %></title>
-    </head>
+	<head>
+		<%= require('html-loader!./layout/header-common.html') %>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
 	<body>
-        <%= require('html-loader!./layout/nav.html') %>
-        <%= require('html-loader!./layout/header.html') %>
-        
-        <div class="page-wrap w">
-            <%= require('html-loader!./layout/nav-side.html') %>
-            <div class="content with-nav">
-                test
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+
+		<div class="w">
+			<ul class="keywords-list">
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=手机">手机</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=数码">数码</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=手机">手机</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=数码">数码</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=电脑">电脑</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=办公配件">办公配件</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=电视">电视</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=空调">空调</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=冰箱">冰箱</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=洗衣机">洗衣机</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=厨卫家电">厨卫家电</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=小家电">小家电</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=家具">家具</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=家具">家具</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=家装">家装</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=厨卫家电">厨卫家电</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=小家电">小家电</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=个护化妆">个护化妆</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=清洁用品">清洁用品</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=纸品">纸品</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=母婴用品">母婴用品</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=儿童玩具">儿童玩具</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=童装童鞋">童装童鞋</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=鞋靴">鞋靴</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=箱包">箱包</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=钟表">钟表</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=珠宝">珠宝</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+				<li class="keywords-item">
+					<a class="link" target="_blank" href="./list.html?keyword=图书">图书</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=音像">音像</a>/
+					<a class="link" target="_blank" href="./list.html?keyword=电子书">电子书</a>
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</li>
+			</ul>
+			<div class="banner-con">
+				<div class="loading"></div>
+			</div>
+			<div class="sub-column">
+				<div class="sub-item top">
+					<a href="">
+						<img src=<%=require('../image/sub-column/top.jpg') %> class="img-rounded">
+					</a>
+				</div>
+				<div class="sub-item mid">
+					<a href="">
+						<img src=<%=require('../image/sub-column/mid.jpg') %> class="img-rounded">
+					</a>
+				</div>
+				<div class="sub-item bottom">
+					<a href="">
+						<img src=<%=require('../image/sub-column/bottom.jpg') %> class="img-rounded">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 商品展示 -->
+		<div class="w">
+			<div class="floor-wrap">
+				<h1 class="floor-title">家用电器</h1>
+				<ul id="floor1" class="floor-list">
+					<div class="loading"></div>
+				</ul>
+			</div>
+
+            <div class="floor-wrap">
+            	<h1 class="floor-title">数码电子</h1>
+            	<ul id="floor2" class="floor-list">
+            		<div class="loading"></div>
+            	</ul>
             </div>
-        </div>
-        
-        <%= require('html-loader!./layout/footer.html') %>
+            
+            <div class="floor-wrap">
+            	<h1 class="floor-title">服装箱包</h1>
+            	<ul id="floor3" class="floor-list">
+            		<div class="loading"></div>
+            	</ul>
+            </div>
+            
+            <div class="floor-wrap">
+            	<h1 class="floor-title">食品生鲜</h1>
+            	<ul id="floor4" class="floor-list">
+            		<div class="loading"></div>
+            	</ul>
+            </div>
+            
+            <div class="floor-wrap">
+            	<h1 class="floor-title">酒水饮料</h1>
+            	<ul id="floor5" class="floor-list">
+            		<div class="loading"></div>
+            	</ul>
+            </div>
+		</div>
+
+		<%= require('html-loader!./layout/footer.html') %>
 	</body>
 </html>

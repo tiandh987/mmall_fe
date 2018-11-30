@@ -1,0 +1,94 @@
+/* 排序按钮 */
+.sort-con{
+    overflow: auto;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+.sort-con .sort-item{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-top: 5px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 17px;
+}
+.sort-con .sort-item.active{
+    background: #f10215;
+    border: 1px solid #f10215;
+    color: #fff;
+}
+.sort-con .sort-item .fa-sort-desc{
+    position: absolute;
+    top: 12px;
+    right: 11.5px;
+}
+.sort-con .sort-item.asc .fa-sort-desc{
+    opacity: .6;
+}
+.sort-con .sort-item.desc .fa-sort-asc{
+    opacity: .6;
+}
+
+/* 列表 */
+.p-list-con{
+    margin-right: -20px;
+    overflow: hidden;
+}
+.p-list-con .p-item{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 245px;
+    margin: 15px 20px 10px 0;
+    cursor: pointer;
+    background: #fff;
+}
+.p-list-con .p-item:hover{
+    box-shadow: 1px 1px 10px #aaa;
+}
+.p-list-con .p-item .p-img{
+    position: absolute;
+    width: 160px;
+    height: 150px;
+    left: 20px;
+    top: 20px;
+}
+.p-list-con .p-item .p-desc-text{
+    position: absolute;
+    left: 22px;
+    bottom: 28px;
+    width: 160px;
+    height: 40px;
+    font-size: 13px;
+    color: #000;
+    overflow: hidden;
+}
+.p-list-con .p-item .p-price{
+    position: absolute;
+    left: 81px;
+    bottom: 4px;
+    font-size: 16px;
+    color: #f10215;
+    border:none;
+}
+
+/* 错误信息 */
+.err-tip{
+        height: 70px;
+    line-height: 70px;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: #f10215;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background: #eee;
+    border-radius: 10px;
+}
