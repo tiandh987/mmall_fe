@@ -1,0 +1,109 @@
+{{#notEmpty}}
+	<div class="cart-header">
+		<table class="table-header">
+			<tr>
+				<th class="all-checked">
+					{{#allChecked}}
+						<input class="all-select" type="checkbox" checked="checked" />
+					{{/allChecked}}
+					{{^allChecked}}
+						<input class="all-select" type="checkbox" />
+					{{/allChecked}}
+						<span>全选</span>
+				</th>
+                <th class="p-info-img"></th>
+				<th class="p-info">
+					<span>商品信息</span>
+				</th>
+				<th class="p-price">
+					<span>单价</span>
+				</th>
+				<th class="p-count">
+					<span>数量</span>
+				</th>
+				<th class="p-total">
+					<span>合计</span>
+				</th>
+				<th class="p-operation">
+					<span>操作</span>
+				</th>
+			</tr>
+		</table>
+	</div>
+	<!-- 购物车中商品列表 -->
+	<div class="cart-list">
+		{{#cartProductVoList}}
+			<table class="table-list" data-product-id="{{productId}}">
+				<tr>
+					<td class="selected">
+						{{#productChecked}}
+							<input class="select" type="checkbox" checked="checked" />
+						{{/productChecked}}
+						{{^productChecked}}
+							<input class="select" type="checkbox" />
+					    {{/productChecked}}
+					</td>
+					<td class="p-info-img">
+						<a class="link" href="./detail.html?productId={{productId}}">
+							<img class="p-info-img" src="{{imageHost}}{{productMainImage}}" alt="{{productName}}" />
+						</a>
+					</td>
+                    <td class="p-info">
+                        <a class="link p-info-desc" href="./detail.html?productId={{productId}}">{{productName}}</a>
+                    </td>
+					<td class="p-price">
+                        <i class="fa fa-jpy" aria-hidden="true"></i>{{productPrice}}
+                    </td>
+					<td class="p-count">
+                        <div class="p-count-btn">
+                            <span class="count-btn minus"> - </span>
+                            <input class="count-input" value="{{quantity}}" data-max="{{productStock}}" readonly="true" />
+                            <span class="count-btn plus"> + </span>
+                        </div>
+					</td>
+					<td class="p-total">
+                        <i class="fa fa-jpy" aria-hidden="true"></i>{{productTotalPrice}}
+                    </td>
+					<td class="p-operation">
+						<span class="link cart-delete">删除</span>
+					</td>
+				</tr>
+			</table>
+		{{/cartProductVoList}}
+	</div>
+	<!-- 购物车统计、结算 -->
+	<div class="cart-footer">
+		<div class="all-checked">
+            {{#allChecked}}
+            	<input class="all-select" type="checkbox" checked="checked" />
+            {{/allChecked}}
+            {{^allChecked}}
+            	<input class="all-select" type="checkbox" />
+            {{/allChecked}}
+            	<span>全选</span>
+        </div>
+        
+        <!-- 删除选中 -->
+        <div class="delete-select">
+            <span class="link">
+            	<i class="fa fa-trash-o"></i>
+            	<span>删除选中</span>
+            </span>
+        </div>
+        
+        <!-- 选中商品总价，去结算 -->
+        <div class="total">
+            <span class="total-price">
+                <i class="fa fa-jpy" aria-hidden="true"></i>{{cartTotalPrice}}
+            </span>
+            <span class="btn btn-submit">去结算</span>
+        </div>
+	</div>
+{{/notEmpty}}
+<!-- 购物车为空 -->
+{{^notEmpty}}
+	<p class="err-tip">
+		<span>购物车中未添加商品，</span>
+		<a class="go-shop" href="./index.html">立即去购物</a>
+	</p>
+{{/notEmpty}}

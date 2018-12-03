@@ -1,0 +1,206 @@
+/* 通用样式 */
+.all-checked{
+    width: 5%;
+}
+
+.selected{
+    width: 5%;
+}
+
+.p-info-img{
+    width: 10%;
+}
+
+.p-info{
+    width: 25%;
+}
+
+.p-price{
+    width: 15%;
+}
+
+.p-count{
+    width: 15%;
+}
+
+.p-total{
+    width: 15%;
+}
+
+.p-operation{
+    width: 15%;
+}
+
+/* 购物车信息分类 头部*/
+.cart-header{
+    margin: 15px 0px;
+    width: 100%;
+}
+
+.table-header{
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.table-header th{
+    text-align: center;
+}
+
+.table-header .all-checked .all-select{
+    float: left;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+
+.table-header .p-info-img{
+    padding-right: 90px;
+}
+
+.table-header .p-info{
+    text-align: left;
+}
+
+/* 购物车中商品信息 */
+.cart-list{
+    width: 100%;
+    margin: 15px 0px;
+}
+
+.table-list{
+    background: #eaeaea;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid #fff;
+}
+
+.table-list td{
+    text-align: center;
+}
+
+.table-list .selected .select{
+    float: left;
+    margin-left: 17px;
+}
+
+.table-list .p-info-img{
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+}
+
+.table-list .p-info{
+    text-align: left;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.table-list .p-price{
+    font-size: 16px;
+}
+
+.table-list .p-total{
+    font-size: 16px;
+}
+
+.table-list .p-count .p-count-btn{
+    font-size: 15px;
+    text-align: center;
+}
+
+.table-list .p-count .count-btn.minus{
+    border: 1px solid #666;
+    background: #fff;
+    padding: 3px 5px 4px 10px;
+    margin-right: -5px;
+    cursor: pointer;
+}
+.table-list .p-count .count-btn.plus{
+    border: 1px solid #666;
+    background: #fff;
+    padding: 3px 7px 4px 7px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.table-list .p-count .count-input{
+    width: 40px;
+    height: 28px;
+    font-size: 14px;
+    text-align: center;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    margin-left: 5px;
+}
+
+
+.table-list .p-operation{
+    font-size: 13px;
+}
+
+/* 购物车商品统计，结算 */
+.cart-footer{
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.cart-footer .all-checked{
+    width: 5%;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+}
+.cart-footer .all-checked .all-select{
+    float: left;
+    margin-top: 17px;
+    margin-left: 17px;
+}
+.cart-footer .delete-select{
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 20px;
+}
+.cart-footer .total{
+    float: right;
+    width: 265px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+}
+.cart-footer .total .total-price{
+    font-size: 16px;
+}
+.cart-footer .btn-submit{
+    width: 70px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: 95px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    padding-left: 16px;
+}
+
+/* 错误信息 */
+.err-tip{
+    height: 70px;
+    line-height: 72px;
+    font-size: 18px;
+    text-align: center;
+    background: #fff;
+    margin-top: 31px;
+    border-radius: 10px;
+}
+.err-tip .go-shop{
+    color: #f10215;
+    text-decoration: none;
+}
+.err-tip .go-shop:hover{
+    cursor: pointer;
+}
