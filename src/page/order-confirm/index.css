@@ -1,0 +1,174 @@
+.panel{
+    margin: 15px 0px 0px 0px;
+}
+
+/* 地址列表 */
+.address-item,
+.address-add{
+    border: 3px dashed #ccc;
+    float: left;
+    width: 192px;
+    cursor: pointer;
+    margin: 10px 15px 0px 0px;
+    padding: 10px;
+}
+.address-item:hover,
+.address-add:hover{
+    background: #fafafa;
+}
+.address-item.active{
+    border: 3px dashed #F10215;
+}
+.address-item .address-title{
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.address-item .address-detail{
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    margin-top: 5px;
+    
+}
+.address-item .address-operation{
+    text-align: right;
+    visibility: hidden;
+}
+.address-item:hover .address-operation{
+    visibility: visible;
+}
+.address-item .address-operation .link{
+    margin-right: 5px;
+}
+.address-add .address-new{
+    text-align: center;
+    color: #ccc;
+    padding: 7px 0px;
+}
+.address-add .address-new .fa{
+    font-size: 49px;
+    line-height: 49px;
+}
+.address-add .address-new .text{
+    font-size: 13px;
+}
+
+/* 商品清单部分 */
+.product-table{
+    width: 100%;
+    margin: 10px 0px;
+    border-collapse: collapse;
+}
+.product-table th,
+.product-table td{
+    border-bottom: 1px dotted #ddd;
+}
+.product-table .cell-img{
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+.product-table .cell-img .p-img{
+    border: 1px solid #ddd;
+    width: 80px;
+    height: 80px;
+}
+.product-table .cell-info{
+    width: 30%;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 13%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 27%;
+    text-align: center;
+}
+
+/* 订单提交 */
+.submit-con{
+    background: #eee;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+}
+.submit-con .submit-total{
+    font-size: 18px;
+    color: #F10215;
+    font-weight: bold;
+    padding-right: 15px;
+}
+.submit-con .order-submit{
+    font-size: 12px;
+    height: 33px;
+    line-height: 33px;
+    width: 65px;
+    padding: 0px;
+    margin-bottom: 7px;
+    margin-right: 20px;
+}
+
+/* 错误信息 */
+.err-tip{
+    height: 70px;
+    line-height: 70px;
+    margin-top: 15px;
+    margin-right: 20px;
+    color: #f10215;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background: #eee;
+    border-radius: 10px;
+}
+
+/* 添加新地址模态框 */
+.modal-body .form-line{
+    overflow: hidden;
+    height: 35px;
+    line-height: 35px;
+    margin: 5px 0px;
+}
+.modal-body .form-line .label{
+    color: #333;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    float: left;
+    width: 106px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.modal-body .form-line .label .required{
+    color: #F10215;
+}
+
+.modal-body .form-line .form-item{
+    padding: 0px 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.modal-footer .btn{
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0px;
+    font-size: 15px;
+    font-weight: normal;
+}

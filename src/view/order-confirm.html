@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/header-common.html') %>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+		<div class="crumb">
+			<div class="w">
+				<div class="crumb-con">
+					<a class="link" href="./index.html">SHOP</a>
+					<span> > </span>
+					<span class="link-text">
+						<%= htmlWebpackPlugin.options.title%></span>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrap w">
+			<!-- 地址列表 -->
+			<div class="panel">
+				<h1 class="panel-title">收货地址</h1>
+				<div class="panel-body address-con">
+
+				</div>
+			</div>
+			<!-- 商品列表 -->
+			<div class="panel">
+				<h1 class="panel-title">商品清单</h1>
+				<div class="panel-body product-con">
+
+				</div>
+			</div>
+            <!-- 地址模态框 -->
+			<div class="modal-wrap">
+                
+            </div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')  %>
+	</body>
+</html>

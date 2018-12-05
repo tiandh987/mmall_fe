@@ -175,14 +175,16 @@
     font-size: 15px;
 }
 .cart-footer .total .total-price{
-    font-size: 16px;
+    font-size: 18px;
+    color: #F10215;
+    font-weight: bold;
 }
 .cart-footer .btn-submit{
     width: 70px;
     height: 35px;
     line-height: 35px;
-    margin-left: 95px;
-    margin-bottom: 5px;
+    margin: 5px 43px 5px 0px;
+    float: right;
     font-size: 13px;
     padding-left: 16px;
 }
