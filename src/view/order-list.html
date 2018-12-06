@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<%= require('html-loader!./layout/header-common.html') %>
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav.html') %>
+		<%= require('html-loader!./layout/header.html') %>
+		<div class="crumb">
+			<div class="w">
+				<div class="crumb-con">
+					<a class="link" href="./index.html">SHOP</a>
+					<span> > </span>
+					<span class="link-text">
+						<%= htmlWebpackPlugin.options.title%></span>
+				</div>
+			</div>
+		</div>
+		<div class="page-wrap w">
+			<%= require('html-loader!./layout/nav-side.html') %>
+			<div class="content with-nav">
+				<div class="panel">
+					<div class="panel-title"><%= htmlWebpackPlugin.options.title %></div>
+					<div class="panel-body">
+						<!-- <div class="loading"></div> -->
+                        <div class="order-list-con">
+                            <!-- 订单列表头 -->
+                            <table class="order-list-table header">
+                                <tr>
+                                    <th class="cell cell-img">&nbsp;</th>
+                                    <th class="cell cell-info">商品信息</th>
+                                    <th class="cell cell-price">单价</th>
+                                    <th class="cell cell-count">数量</th>
+                                    <th class="cell cell-total">小计</th>
+                                </tr>
+                            </table>
+                            <!-- 订单信息 -->
+                            <table class="order-list-table order-item">
+                                <!-- 订单头 -->
+                                <tr>
+                                    <td colspan="5" class="order-info">
+                                        <span class="order-text">
+                                            <span>订单号：</span>
+                                            <a href="./order-detail.html?orderNumber=" class="link order-num">
+                                                NO:123456789
+                                            </a>
+                                        </span>
+                                        <span class="order-text">
+                                        	<span>下单时间：2018-12-6 08:56:00</span>
+                                        </span>
+                                        <span class="order-text">
+                                        	<span>收件人：田登昊</span>
+                                        </span>
+                                        <span class="order-text">
+                                        	<span>订单状态：未支付</span>
+                                        </span>
+                                        <span class="order-text">
+                                        	<span>订单总价：</span>
+                                            <span class="order-total">￥1234.00</span>
+                                        </span>
+                                        <a href="./order-detail.html?orderNumber=" class="link order-detail">
+                                        	查看详情>>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <!-- 订单商品信息 -->
+                                <tr>
+                                	<td class="cell cell-img">
+                                        <img src="http://192.168.43.71:8081/3ac95644-fdfd-42fe-93c6-b1f5af80c34c.jpg"
+                                         alt="" class="p-img"/>
+                                    </td>
+                                	<td class="cell cell-info">
+                                        <a href="./detail.html?productId=" class="link">
+                                            商品信息
+                                        </a>
+                                    </td>
+                                	<td class="cell cell-price">￥123</td>
+                                	<td class="cell cell-count">5</td>
+                                	<td class="cell cell-total">￥789</td>
+                                </tr>
+                                <tr>
+                                	<td class="cell cell-img">
+                                		<img src="http://192.168.43.71:8081/3ac95644-fdfd-42fe-93c6-b1f5af80c34c.jpg"
+                                		alt="" class="p-img"/>
+                                	</td>
+                                	<td class="cell cell-info">
+                                        <a href="./detail.html?productId=" class="link">
+                                        	商品信息
+                                        </a>
+                                    </td>
+                                	<td class="cell cell-price">￥123</td>
+                                	<td class="cell cell-count">5</td>
+                                	<td class="cell cell-total">￥789</td>
+                                </tr>
+                            </table>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html')  %>
+	</body>
+</html>
