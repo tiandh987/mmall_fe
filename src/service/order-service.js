@@ -14,6 +14,7 @@ var _order = {
     createOrder : function(shippingId, resolve, reject){
         _mm.request({
             url     : _mm.getServerUrl('/order/create.do'),
+            data    : shippingId,
             success : resolve,
             error   : reject
         });
@@ -23,6 +24,31 @@ var _order = {
     getOrderList : function(listParam, resolve, reject){
     	_mm.request({
     		url     : _mm.getServerUrl('/order/list.do'),
+            data    : listParam,
+    		success : resolve,
+    		error   : reject
+    	});
+    },
+    
+    // 获取订单详情
+    getOrderDetail : function(orderNo, resolve, reject){
+    	_mm.request({
+    		url     : _mm.getServerUrl('/order/detail.do'),
+    		data    : {
+                orderNo : orderNo
+            },
+    		success : resolve,
+    		error   : reject
+    	});
+    },
+    
+    // 取消订单
+    cancelOrder : function(orderNo, resolve, reject){
+    	_mm.request({
+    		url     : _mm.getServerUrl('/order/cancel.do'),
+    		data    : {
+    			orderNo : orderNo
+    		},
     		success : resolve,
     		error   : reject
     	});
