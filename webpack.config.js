@@ -44,8 +44,8 @@ const config = {
 	//出口
 	output: {
 		filename: 'js/[name].js',
-		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/dist/'
+		path: path.resolve('dist'),
+		publicPath: 'dist'
 	},
 
 	//配置开发环境服务器
