@@ -45,7 +45,7 @@ const config = {
 	output: {
 		filename: 'js/[name].js',
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/mmall_fe/dist/'
+		publicPath: '/dist/'
 	},
 
 	//配置开发环境服务器
