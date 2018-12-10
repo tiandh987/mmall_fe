@@ -7,6 +7,7 @@ const getHtmlConfig = function(name, title) {
 	return {
 		template: './src/view/' + name + '.html',
 		filename: 'view/' + name + '.html',
+        favicon: './favicon.ico',
 		title: title,
 		inject: true,
 		hash: true,
@@ -90,9 +91,16 @@ const config = {
 			//加载 .string文件
 			{
 				test: /\.string$/,
-				use: {
-					loader: 'html-loader'
-				}
+// 				use: {
+// 					loader: 'html-loader'
+// 				},
+                use: [{
+                	loader: 'html-loader',
+                	options: {
+                		minimize : true,
+                		removeAttributedQuotes : false
+                	}
+                }]
 			}
 		]
 	},

@@ -2,7 +2,7 @@ var Hogan = require('hogan.js');
 
 var conf = {
 	// serverHost : 'http://192.168.1.71'
-    serverHost : 'http://192.168.43.71'
+    serverHost : 'http://39.96.48.39'
 };
 
 // 通用工具类
