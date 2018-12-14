@@ -178,8 +178,8 @@ const config = {
 					chunks: 'initial',
 					minSize: 0,
 					priority: 2,
-					minChunks: 2,
-				},
+					minChunks: 2
+				}
 			}
 		}
 	}
