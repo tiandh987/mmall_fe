@@ -119,7 +119,7 @@ const config = {
 	//插件
 	plugins: [
 		//生成dist目录前先删除旧的dist目录。传入数组，指定要删除的目录
-		new CleanWebpackPlugin(['dist']),
+		// new CleanWebpackPlugin(['dist']),
 
 		//webpack 单独打包css，通过link的方式引入
 		new MiniCssExtractPlugin({
