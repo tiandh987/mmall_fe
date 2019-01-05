@@ -42,12 +42,12 @@ $(function() {
     $("#floor1").html(floor1Html);
     
     var floor2Html = _mm.renderHtml(templateFloor, {
-        floorList : floor2List
+        floorList : floorList.floor2List
     });
     $('#floor2').html(floor2Html);
     
     var floor3Html = _mm.renderHtml(templateFloor, {
-        floorList : floor3List
+        floorList : floorList.floor3List
     });
     $('#floor3').html(floor3Html);
 });
